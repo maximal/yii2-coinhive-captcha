@@ -1,0 +1,22 @@
+{
+	"name": "maximal/yii2-coinhive-captcha",
+	"description": "Yii2 widget for using CoinHive captcha in application forms.",
+	"keywords": ["yii2", "extension", "widget", "coinhive", "captcha", "blockchain"],
+	"homepage": "https://github.com/maximal/yii2-coinhive-captcha",
+	"type": "yii2-extension",
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Sasha Maximal",
+			"homepage": "https://maximals.ru"
+		}
+	],
+	"require": {
+		"yiisoft/yii2": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"maximal\\coinhive\\": ""
+		}
+	}
+}
