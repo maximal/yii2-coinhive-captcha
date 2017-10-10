@@ -17,7 +17,7 @@ use yii\web\AssetBundle;
  * This asset bundle provides the javascript files needed for the [[Captcha]] widget.
  *
  * @see \maximal\coinhive\Captcha - CoinHive Captcha widget
- * @see https://coin-hive.com/documentation/captcha
+ * @see https://coinhive.com/documentation/captcha
  *
  * @package maximal\coinhive
  * @author MaximAL
@@ -27,6 +27,6 @@ use yii\web\AssetBundle;
 class CaptchaAsset extends AssetBundle
 {
 	public $js = [
-		['https://coin-hive.com/lib/captcha.min.js', 'async' => true],
+		['https://coinhive.com/lib/captcha.min.js', 'async' => true],
 	];
 }

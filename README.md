@@ -16,6 +16,6 @@ Instead, the captcha is a “proof of work” — making it uneconomic for spamm
 
 ## Links
 
-* https://coin-hive.com/documentation/captcha — CoinHive captcha documentation;
+* https://coinhive.com/documentation/captcha — CoinHive captcha documentation;
 * http://www.yiiframework.com — Yii framework;
 * https://maximals.ru — widget author’s website (Russian).

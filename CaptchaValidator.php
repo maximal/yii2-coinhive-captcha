@@ -20,7 +20,7 @@ use yii\validators\Validator;
  * CoinHive captcha validator class.
  *
  * @see \maximal\coinhive\Captcha - CoinHive Captcha widget
- * @see https://coin-hive.com/documentation/captcha
+ * @see https://coinhive.com/documentation/captcha
  *
  * @package maximal\coinhive
  * @author MaximAL
@@ -31,7 +31,7 @@ class CaptchaValidator extends Validator
 {
 	/**
 	 * Your private Secret-Key.
-	 * @see https://coin-hive.com/settings/sites
+	 * @see https://coinhive.com/settings/sites
 	 * @var string
 	 */
 	public $secretKey = '';
@@ -44,7 +44,7 @@ class CaptchaValidator extends Validator
 	/**
 	 * @var string CoinHive API URL
 	 */
-	protected $url = 'https://api.coin-hive.com/token/verify';
+	protected $url = 'https://api.coinhive.com/token/verify';
 
 	/**
 	 * @inheritdoc
@@ -59,7 +59,7 @@ class CaptchaValidator extends Validator
 		if ($this->secretKey === '') {
 			throw new InvalidConfigException(
 				'Secret key `' . $this->secretKey . '` is invalid. ' .
-				'Go to https://coin-hive.com/settings/sites and get your secret key.'
+				'Go to https://coinhive.com/settings/sites and get your secret key.'
 			);
 		}
 	}

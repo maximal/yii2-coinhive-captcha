@@ -18,7 +18,7 @@ use yii\widgets\InputWidget;
 /**
  * CoinHive captcha class.
  *
- * @see https://coin-hive.com/documentation/captcha
+ * @see https://coinhive.com/documentation/captcha
  *
  * @package maximal\coinhive
  * @author MaximAL
@@ -29,7 +29,7 @@ class Captcha extends InputWidget
 {
 	/**
 	 * Your public Site-Key.
-	 * @see https://coin-hive.com/settings/sites
+	 * @see https://coinhive.com/settings/sites
 	 * @var string
 	 */
 	public $siteKey = '';
@@ -65,7 +65,7 @@ class Captcha extends InputWidget
 		if ($this->siteKey === '') {
 			throw new InvalidConfigException(
 				'Website key `' . $this->siteKey . '` is invalid. ' .
-				'Go to https://coin-hive.com/settings/sites and get your website key.'
+				'Go to https://coinhive.com/settings/sites and get your website key.'
 			);
 		}
 
