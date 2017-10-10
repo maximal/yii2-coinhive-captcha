@@ -72,7 +72,7 @@ class Captcha extends InputWidget
 		if ($this->hashes % 256 !== 0) {
 			throw new InvalidConfigException(
 				'The number of hashes `' . $this->hashes . '` is invalid. ' .
-				'Your hashes count shoud be a multiple of 256 (256, 512, 768, 1024, 1280, etc).'
+				'Your hashes count should be a multiple of 256 (256, 512, 768, 1024, 1280, etc).'
 			);
 		}
 	}
