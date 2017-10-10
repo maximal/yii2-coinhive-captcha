@@ -1,0 +1,6 @@
+# IDEA directory
+.idea
+
+# Composer files
+composer
+composer.lock
