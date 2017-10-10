@@ -4,7 +4,7 @@
 	"keywords": ["yii2", "extension", "widget", "coinhive", "captcha", "blockchain"],
 	"homepage": "https://github.com/maximal/yii2-coinhive-captcha",
 	"type": "yii2-extension",
-	"license": "BSD-3-Clause",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Sasha Maximal",
