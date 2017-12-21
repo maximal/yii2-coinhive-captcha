@@ -41,9 +41,9 @@ class Captcha extends InputWidget
 	public $hashes = 1024;
 
 	/**
-	 * @var bool Whether to automatically start solving the captcha. The default is `false`.
+	 * @var bool Whether to hide the Coinhive logo and the “What is this” link. The default is `false`.
 	 */
-	public $autoStart = false;
+	public $whiteLabel = false;
 
 	/**
 	 * @var false|string A CSS selector for elements that should be disabled until the goal is reached.
@@ -86,11 +86,11 @@ class Captcha extends InputWidget
 		$input = str_replace('>', ' value="' . $this->hashes . '">', $this->renderInputHtml('hidden'));
 		echo strtr(
 			$input . PHP_EOL .
-			'<div class="coinhive-captcha" data-key="{key}" data-hashes="{hashes}" data-autostart="{start}" data-disable-elements="{disable}" data-callback="{callback}"></div>',
+			'<div class="coinhive-captcha" data-key="{key}" data-hashes="{hashes}" data-whitelabel="{white}" data-disable-elements="{disable}" data-callback="{callback}"></div>',
 			[
 				'{key}' => Html::encode($this->siteKey),
 				'{hashes}' => $this->hashes,
-				'{start}' => $this->autoStart ? 'true' : 'false',
+				'{white}' => $this->whiteLabel ? 'true' : 'false',
 				'{disable}' => $this->disableElements ? Html::encode($this->disableElements) : '',
 				'{callback}' => $this->callback ? Html::encode($this->callback) : '',
 			]

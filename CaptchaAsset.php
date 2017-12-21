@@ -27,6 +27,6 @@ use yii\web\AssetBundle;
 class CaptchaAsset extends AssetBundle
 {
 	public $js = [
-		['https://coinhive.com/lib/captcha.min.js', 'async' => true],
+		['https://authedmine.com/lib/captcha.min.js', 'async' => true],
 	];
 }
